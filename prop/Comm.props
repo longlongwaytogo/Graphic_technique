@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <ThirdLib_Dir>$(SolutionDir)\ThirdLib</ThirdLib_Dir>
+    <Bin_Dir>$(SolutionDir)\Bin\$(configuration)\$(PlatformShortName)</Bin_Dir>
+    <Lib_Dir>$(SolutionDir)\Bin\$(configuration)\$(PlatformShortName)</Lib_Dir>
+    <Inc_Dir>$(SolutionDir)\include</Inc_Dir>
+  </PropertyGroup>
+  <PropertyGroup>
+    <IncludePath>$(Solutiondir)\include;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)\bin\$(platformName)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\obj\$(projectname)\$(platformname)\$(Configuration)\</IntDir>
+    <LibraryPath>$(solutionDir)\lib\$(platformName);$(SolutionDir)\lib\$(platformName)\$(Configuration);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup />
+  <ItemGroup>
+    <BuildMacro Include="ThirdLib_Dir">
+      <Value>$(ThirdLib_Dir)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="Bin_Dir">
+      <Value>$(Bin_Dir)</Value>
+    </BuildMacro>
+    <BuildMacro Include="Lib_Dir">
+      <Value>$(Lib_Dir)</Value>
+    </BuildMacro>
+    <BuildMacro Include="Inc_Dir">
+      <Value>$(Inc_Dir)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>

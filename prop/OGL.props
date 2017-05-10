@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <ThirdLib_Dir>$(SolutionDir)\ThirdLib</ThirdLib_Dir>
+  </PropertyGroup>
+  <PropertyGroup>
+    <IncludePath>$(ThirdLib_Dir)\glew-2.0.0\include;$(ThirdLib_Dir)\glfw-3.2.1.bin\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ThirdLib_Dir)\glew-2.0.0\lib\Release\$(PlatformName);$(ThirdLib_Dir)\glfw-3.2.1.bin\$(PlatformName)\lib-vc2010;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>GLEW_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;glew32s.lib;glfw3.lib;glad.lib;stb_image.lib;assimp.lib;SOIL.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <BuildMacro Include="ThirdLib_Dir">
+      <Value>$(ThirdLib_Dir)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>

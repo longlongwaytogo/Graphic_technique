@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Test", "Test\Test.vcxproj", "{87A6FBEE-8399-47C1-A38D-C7C2BD4625CC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestBase", "TestBase\TestBase.vcxproj", "{64B09626-E35E-46C7-B82A-C690019E5821}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "technique", "technique", "{FF57D967-1ABD-49A8-ADBA-C43DC2AE6853}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DeferredRendering", "Technique\DeferredRendering\DeferredRendering.vcxproj", "{C01FC6D6-48C9-45BB-9D47-2F802A9B508A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{9C9D156E-5358-4BBB-8E85-6EC8CFB5F8D3}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "glad", "comm\glad\glad.vcxproj", "{525A67D0-961B-479E-BC1D-9BEA9536EB66}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "stb_image", "comm\stb_image\stb_image.vcxproj", "{57FB7105-388C-424B-A98D-07FFC41D31D8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Light", "Light", "{83C87160-80CA-426E-9928-90E0C5B772DE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Color", "Technique\Lighting\Color\Color.vcxproj", "{6573287E-8B88-407B-8A1B-BA06BA8FE848}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{87A6FBEE-8399-47C1-A38D-C7C2BD4625CC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{87A6FBEE-8399-47C1-A38D-C7C2BD4625CC}.Debug|Win32.Build.0 = Debug|Win32
+		{87A6FBEE-8399-47C1-A38D-C7C2BD4625CC}.Release|Win32.ActiveCfg = Release|Win32
+		{87A6FBEE-8399-47C1-A38D-C7C2BD4625CC}.Release|Win32.Build.0 = Release|Win32
+		{64B09626-E35E-46C7-B82A-C690019E5821}.Debug|Win32.ActiveCfg = Debug|Win32
+		{64B09626-E35E-46C7-B82A-C690019E5821}.Debug|Win32.Build.0 = Debug|Win32
+		{64B09626-E35E-46C7-B82A-C690019E5821}.Release|Win32.ActiveCfg = Release|Win32
+		{64B09626-E35E-46C7-B82A-C690019E5821}.Release|Win32.Build.0 = Release|Win32
+		{C01FC6D6-48C9-45BB-9D47-2F802A9B508A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C01FC6D6-48C9-45BB-9D47-2F802A9B508A}.Debug|Win32.Build.0 = Debug|Win32
+		{C01FC6D6-48C9-45BB-9D47-2F802A9B508A}.Release|Win32.ActiveCfg = Release|Win32
+		{C01FC6D6-48C9-45BB-9D47-2F802A9B508A}.Release|Win32.Build.0 = Release|Win32
+		{525A67D0-961B-479E-BC1D-9BEA9536EB66}.Debug|Win32.ActiveCfg = Debug|Win32
+		{525A67D0-961B-479E-BC1D-9BEA9536EB66}.Debug|Win32.Build.0 = Debug|Win32
+		{525A67D0-961B-479E-BC1D-9BEA9536EB66}.Release|Win32.ActiveCfg = Release|Win32
+		{525A67D0-961B-479E-BC1D-9BEA9536EB66}.Release|Win32.Build.0 = Release|Win32
+		{57FB7105-388C-424B-A98D-07FFC41D31D8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{57FB7105-388C-424B-A98D-07FFC41D31D8}.Debug|Win32.Build.0 = Debug|Win32
+		{57FB7105-388C-424B-A98D-07FFC41D31D8}.Release|Win32.ActiveCfg = Release|Win32
+		{57FB7105-388C-424B-A98D-07FFC41D31D8}.Release|Win32.Build.0 = Release|Win32
+		{6573287E-8B88-407B-8A1B-BA06BA8FE848}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6573287E-8B88-407B-8A1B-BA06BA8FE848}.Debug|Win32.Build.0 = Debug|Win32
+		{6573287E-8B88-407B-8A1B-BA06BA8FE848}.Release|Win32.ActiveCfg = Release|Win32
+		{6573287E-8B88-407B-8A1B-BA06BA8FE848}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C01FC6D6-48C9-45BB-9D47-2F802A9B508A} = {FF57D967-1ABD-49A8-ADBA-C43DC2AE6853}
+		{525A67D0-961B-479E-BC1D-9BEA9536EB66} = {9C9D156E-5358-4BBB-8E85-6EC8CFB5F8D3}
+		{57FB7105-388C-424B-A98D-07FFC41D31D8} = {9C9D156E-5358-4BBB-8E85-6EC8CFB5F8D3}
+		{6573287E-8B88-407B-8A1B-BA06BA8FE848} = {83C87160-80CA-426E-9928-90E0C5B772DE}
+	EndGlobalSection
+EndGlobal
