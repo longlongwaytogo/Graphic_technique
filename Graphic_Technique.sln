@@ -21,6 +21,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Color", "Technique\Lighting
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Color_Light", "Technique\Lighting\Color_Light\Color_Light.vcxproj", "{6C0B155A-1FE1-4E56-86A5-DA2D5CE36483}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OffScreenRender", "Technique\OffScreenRender\OffScreenRender.vcxproj", "{78D39801-7922-42CC-BE66-3F147A5DB9A9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -55,12 +57,17 @@ Global
 		{6C0B155A-1FE1-4E56-86A5-DA2D5CE36483}.Debug|Win32.Build.0 = Debug|Win32
 		{6C0B155A-1FE1-4E56-86A5-DA2D5CE36483}.Release|Win32.ActiveCfg = Release|Win32
 		{6C0B155A-1FE1-4E56-86A5-DA2D5CE36483}.Release|Win32.Build.0 = Release|Win32
+		{78D39801-7922-42CC-BE66-3F147A5DB9A9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{78D39801-7922-42CC-BE66-3F147A5DB9A9}.Debug|Win32.Build.0 = Debug|Win32
+		{78D39801-7922-42CC-BE66-3F147A5DB9A9}.Release|Win32.ActiveCfg = Release|Win32
+		{78D39801-7922-42CC-BE66-3F147A5DB9A9}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{C01FC6D6-48C9-45BB-9D47-2F802A9B508A} = {FF57D967-1ABD-49A8-ADBA-C43DC2AE6853}
+		{78D39801-7922-42CC-BE66-3F147A5DB9A9} = {FF57D967-1ABD-49A8-ADBA-C43DC2AE6853}
 		{525A67D0-961B-479E-BC1D-9BEA9536EB66} = {9C9D156E-5358-4BBB-8E85-6EC8CFB5F8D3}
 		{57FB7105-388C-424B-A98D-07FFC41D31D8} = {9C9D156E-5358-4BBB-8E85-6EC8CFB5F8D3}
 		{6573287E-8B88-407B-8A1B-BA06BA8FE848} = {83C87160-80CA-426E-9928-90E0C5B772DE}
