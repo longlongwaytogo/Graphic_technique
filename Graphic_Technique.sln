@@ -23,6 +23,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Color_Light", "Technique\Li
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OffScreenRender", "Technique\OffScreenRender\OffScreenRender.vcxproj", "{78D39801-7922-42CC-BE66-3F147A5DB9A9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DrawTest", "DrawTest", "{5345AB97-1694-4C82-B501-0BA28F4FC8E1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DrawGeometry", "Technique\DrawTest\DrawGeometry\DrawGeometry.vcxproj", "{B854306C-A243-4AA8-9F2F-4DDC2182E753}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -61,6 +65,10 @@ Global
 		{78D39801-7922-42CC-BE66-3F147A5DB9A9}.Debug|Win32.Build.0 = Debug|Win32
 		{78D39801-7922-42CC-BE66-3F147A5DB9A9}.Release|Win32.ActiveCfg = Release|Win32
 		{78D39801-7922-42CC-BE66-3F147A5DB9A9}.Release|Win32.Build.0 = Release|Win32
+		{B854306C-A243-4AA8-9F2F-4DDC2182E753}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B854306C-A243-4AA8-9F2F-4DDC2182E753}.Debug|Win32.Build.0 = Debug|Win32
+		{B854306C-A243-4AA8-9F2F-4DDC2182E753}.Release|Win32.ActiveCfg = Release|Win32
+		{B854306C-A243-4AA8-9F2F-4DDC2182E753}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -72,5 +80,6 @@ Global
 		{57FB7105-388C-424B-A98D-07FFC41D31D8} = {9C9D156E-5358-4BBB-8E85-6EC8CFB5F8D3}
 		{6573287E-8B88-407B-8A1B-BA06BA8FE848} = {83C87160-80CA-426E-9928-90E0C5B772DE}
 		{6C0B155A-1FE1-4E56-86A5-DA2D5CE36483} = {83C87160-80CA-426E-9928-90E0C5B772DE}
+		{B854306C-A243-4AA8-9F2F-4DDC2182E753} = {5345AB97-1694-4C82-B501-0BA28F4FC8E1}
 	EndGlobalSection
 EndGlobal

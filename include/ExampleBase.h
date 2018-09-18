@@ -13,6 +13,17 @@
 
 #include <learnopengl/camera.h>
 #include <glm/glm.hpp>
+
+
+//-------------------------------------
+
+/*
+virtual bool initExample();
+virtual bool update();
+virtual bool render();
+
+*/
+//------------------------------------
 class ExampleBase
 {
 public:
@@ -123,7 +134,7 @@ public:
 	virtual bool render()
 	{
 		glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
-		glClear(GL_COLOR_BUFFER_BIT);
+		glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
 		return true;
 
 	}
@@ -254,5 +265,14 @@ public:
 		else  \
 		  eb.start(); \
 	}
-	
+
+//// 定义在CPP文件中
+//#define RunExample(example) \
+//	Init_Static();		 \ 
+//int _tmain(int argc, _TCHAR* argv[]) \
+//{									\
+//    		 
+//	Example_Start(example,example);	\
+//	return 0;						\
+//}									
 #endif 
