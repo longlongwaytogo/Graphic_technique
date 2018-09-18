@@ -27,6 +27,9 @@
     <ClInclude Include="Geometry.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Shape.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -36,6 +39,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Geometry.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Shape.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

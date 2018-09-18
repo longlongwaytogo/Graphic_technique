@@ -20,6 +20,7 @@ class DrawGeometry: public ExampleBase
 public:
 	DrawGeometry()
 	{
+	
 	}
 
 	~DrawGeometry()
@@ -33,16 +34,44 @@ public:
 	virtual bool initExample()
 	{
 		ExampleBase::initExample();
-
+		// 立即模式
 		std::shared_ptr<Geometry> pImmediateGeometry(new ImmediateGeometry());
 		pImmediateGeometry->SetName("ImmediateGeometry");
 		_geometrys.push_back(pImmediateGeometry);
+
+		// 显示列表模式	
+		std::shared_ptr<Geometry> pListGeometry(new DisplayListGeometry());
+		pListGeometry->SetName("DisplayListGeometry");
+		_geometrys.push_back(pListGeometry);
+
+		// 顶点数组模式
+		std::shared_ptr<Geometry> pVertexArraysGeometry(new VertexArraysGeometry());
+		pVertexArraysGeometry->SetName("VertexArraysGeometry");
+		_geometrys.push_back(pVertexArraysGeometry);
+
+
+		// VBO 
+		std::shared_ptr<Geometry> pVBOGeometry(new VBOArrayGeometry());
+		pVBOGeometry->SetName("VBOArrayGeometry");
+		_geometrys.push_back(pVBOGeometry);
+
+		// VBO + VAO
+		std::shared_ptr<Geometry> pVAOGeometry(new VAOGeometry());
+		pVAOGeometry->SetName("VAOGeometry");
+		_geometrys.push_back(pVAOGeometry);
+
+		// VBO + VAO +EBO 
+		std::shared_ptr<Geometry> pEBOGeometry(new EBOGeometry());
+		pEBOGeometry->SetName("EBOGeometry");
+		_geometrys.push_back(pEBOGeometry);
 
 
 		for(auto itr = _geometrys.begin(); itr != _geometrys.end(); ++itr)
 		{
 			(*itr)->Init();
 		}
+
+
 		return true;
 	}
 	//virtual bool setup()

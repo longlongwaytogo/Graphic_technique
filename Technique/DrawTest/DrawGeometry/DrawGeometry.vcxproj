@@ -84,12 +84,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Geometry.h" />
+    <ClInclude Include="Shape.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DrawGeometry.cpp" />
     <ClCompile Include="Geometry.cpp" />
+    <ClCompile Include="Shape.cpp" />
     <ClCompile Include="stdafx.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
