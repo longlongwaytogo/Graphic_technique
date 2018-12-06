@@ -27,6 +27,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DrawTest", "DrawTest", "{53
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DrawGeometry", "Technique\DrawTest\DrawGeometry\DrawGeometry.vcxproj", "{B854306C-A243-4AA8-9F2F-4DDC2182E753}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Model", "Model", "{E4212764-8A50-44F6-B81E-D39ABCCBDBE5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ModelLoading", "Technique\Model\ModelLoading\ModelLoading\ModelLoading.vcxproj", "{0063058D-E7DF-4D96-9477-70492192E29A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -69,6 +73,10 @@ Global
 		{B854306C-A243-4AA8-9F2F-4DDC2182E753}.Debug|Win32.Build.0 = Debug|Win32
 		{B854306C-A243-4AA8-9F2F-4DDC2182E753}.Release|Win32.ActiveCfg = Release|Win32
 		{B854306C-A243-4AA8-9F2F-4DDC2182E753}.Release|Win32.Build.0 = Release|Win32
+		{0063058D-E7DF-4D96-9477-70492192E29A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0063058D-E7DF-4D96-9477-70492192E29A}.Debug|Win32.Build.0 = Debug|Win32
+		{0063058D-E7DF-4D96-9477-70492192E29A}.Release|Win32.ActiveCfg = Release|Win32
+		{0063058D-E7DF-4D96-9477-70492192E29A}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -81,5 +89,6 @@ Global
 		{6573287E-8B88-407B-8A1B-BA06BA8FE848} = {83C87160-80CA-426E-9928-90E0C5B772DE}
 		{6C0B155A-1FE1-4E56-86A5-DA2D5CE36483} = {83C87160-80CA-426E-9928-90E0C5B772DE}
 		{B854306C-A243-4AA8-9F2F-4DDC2182E753} = {5345AB97-1694-4C82-B501-0BA28F4FC8E1}
+		{0063058D-E7DF-4D96-9477-70492192E29A} = {E4212764-8A50-44F6-B81E-D39ABCCBDBE5}
 	EndGlobalSection
 EndGlobal

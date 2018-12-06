@@ -215,8 +215,8 @@ void EBOGeometry::Init()
 	//glVertexAttribPointer(1,3,GL_FLOAT,GL_FALSE,sizeof(GLuint),(GLvoid*)0); // 绑定ebo属性到vao 1号属性上
 	
 	glBindVertexArray(0);
-	glBindBuffer(GL_ARRAY_BUFFER,0);
-	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER,0);
+	//glBindBuffer(GL_ARRAY_BUFFER,0);
+	//glBindBuffer(GL_ELEMENT_ARRAY_BUFFER,0);
 	
 	
 
