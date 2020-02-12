@@ -104,6 +104,21 @@ private:
 	GLuint _vbo_id;
 };
 
+// VAO + Array
+class VAOArrayGeometry :public Geometry
+{
+
+public:
+
+	virtual void Init();
+	virtual void Draw();
+	virtual void Destroy();
+
+private:
+	GLuint _vao_id;
+	 
+};
+
 //
 // VAO + VBO + EBO
 class EBOGeometry :public Geometry

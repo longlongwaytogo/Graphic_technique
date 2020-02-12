@@ -127,6 +127,20 @@ public:
 			_camera->ProcessKeyboard(LEFT, _deltaTime);
 		if (_keys[GLFW_KEY_D])
 			_camera->ProcessKeyboard(RIGHT, _deltaTime);
+		if(_keys[GLFW_KEY_F2])
+		{
+			static bool bWire =false;
+			if(!bWire)
+			{
+					glPolygonMode(GL_FRONT_AND_BACK ,GL_LINE );
+					bWire = true;
+			}
+			else
+			{
+				glPolygonMode(GL_FRONT_AND_BACK ,GL_FILL );
+				bWire =false;
+			}
+		}
 
 		return true;
 
@@ -252,6 +266,7 @@ protected:
 	double _lastY;
 
 	bool    _keys[1024];
+ 
 public:
 	static ExampleBase* _base;
 	

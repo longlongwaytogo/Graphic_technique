@@ -23,7 +23,7 @@ private:
 };
 
 
-
- void GenCylinder(std::vector<glm::vec3>& triangle_points,std::vector< unsigned int>& indexs,float radius, float height, int x_dimesion,int y_dimesion);
+ // return 索引模式所使用的顶点
+ std::vector<glm::vec3> GenCylinder(std::vector<glm::vec3>& triangle_points,std::vector< unsigned int>& indexs,float radius, float height, int x_dimesion,int y_dimesion);
 
 #endif 

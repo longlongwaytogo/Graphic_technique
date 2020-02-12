@@ -34,33 +34,38 @@ public:
 	virtual bool initExample()
 	{
 		ExampleBase::initExample();
-		// 立即模式
+		// 0 立即模式
 		std::shared_ptr<Geometry> pImmediateGeometry(new ImmediateGeometry());
 		pImmediateGeometry->SetName("ImmediateGeometry");
 		_geometrys.push_back(pImmediateGeometry);
 
-		// 显示列表模式	
+		// 1 显示列表模式	
 		std::shared_ptr<Geometry> pListGeometry(new DisplayListGeometry());
 		pListGeometry->SetName("DisplayListGeometry");
 		_geometrys.push_back(pListGeometry);
 
-		// 顶点数组模式
+		// 2 顶点数组模式
 		std::shared_ptr<Geometry> pVertexArraysGeometry(new VertexArraysGeometry());
 		pVertexArraysGeometry->SetName("VertexArraysGeometry");
 		_geometrys.push_back(pVertexArraysGeometry);
 
 
-		// VBO 
+		// 3 VBO 
 		std::shared_ptr<Geometry> pVBOGeometry(new VBOArrayGeometry());
 		pVBOGeometry->SetName("VBOArrayGeometry");
 		_geometrys.push_back(pVBOGeometry);
 
-		// VBO + VAO
+		// 4 VBO + VAO
 		std::shared_ptr<Geometry> pVAOGeometry(new VAOGeometry());
 		pVAOGeometry->SetName("VAOGeometry");
 		_geometrys.push_back(pVAOGeometry);
 
-		// VBO + VAO +EBO 
+		// 5 VAO +Array
+		std::shared_ptr<Geometry> pVAOArray(new VAOArrayGeometry());
+		pVAOArray->SetName("VAOArrayGeometry");
+		_geometrys.push_back(pVAOArray);
+
+		// 6 VBO + VAO +EBO 
 		std::shared_ptr<Geometry> pEBOGeometry(new EBOGeometry());
 		pEBOGeometry->SetName("EBOGeometry");
 		_geometrys.push_back(pEBOGeometry);

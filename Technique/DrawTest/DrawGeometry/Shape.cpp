@@ -1,7 +1,7 @@
 #include "Shape.h"
 
 
-void GenCylinder(std::vector<glm::vec3>& triangle_points,std::vector<unsigned int>& indexs,float radius, float height, int x_dimesion,int y_dimesion)
+ std::vector<glm::vec3> GenCylinder(std::vector<glm::vec3>& triangle_points,std::vector<unsigned int>& indexs,float radius, float height, int x_dimesion,int y_dimesion)
 {
 	std::vector<glm::vec3> all_points;
 	std::vector<unsigned int> all_indexs;
@@ -59,4 +59,6 @@ void GenCylinder(std::vector<glm::vec3>& triangle_points,std::vector<unsigned in
 		}
 	}
 	indexs = all_indexs;
+
+	return all_points;
 }
